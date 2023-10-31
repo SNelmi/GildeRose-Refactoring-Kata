@@ -18,9 +18,9 @@ public class AgedBrieItemTest {
     @BeforeEach
     void testUp(){
         items = new ItemStrategy[] {
-           new AgedBrieItem("Conjured Item", 10, 15),
-            new  AgedBrieItem("Conjured Item", 1, 0),
-            new  AgedBrieItem("Conjured Item", -2, 50),
+           new AgedBrieItem("Aged Brie Item", 10, 15),
+            new  AgedBrieItem("Aged Brie Item", 1, 0),
+            new  AgedBrieItem("Aged Brie Item", -2, 50),
         };
     }
     @Test

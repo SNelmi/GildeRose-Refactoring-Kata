@@ -18,9 +18,9 @@ public class NormalItemTest {
     @BeforeEach
     void testUp(){
         items = new ItemStrategy[] {
-           new NormalItem("Conjured Item", 10, 15),
-            new  NormalItem("Conjured Item", 5, 0),
-            new  NormalItem("Conjured Item", -1, 0),
+           new NormalItem("Normal Item", 10, 15),
+            new  NormalItem("Normal Item", 5, 0),
+            new  NormalItem("Normal Item", -1, 0),
         };
     }
     @Test
