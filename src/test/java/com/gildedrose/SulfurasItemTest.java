@@ -1,8 +1,6 @@
 package com.gildedrose;
 
-import com.gildedrose.strategy.Impl.ConjuredItem;
 import com.gildedrose.strategy.Impl.SulfurasItem;
-import com.gildedrose.strategy.ItemStrategy;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,13 +9,13 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class SulfurasItemTest {
 
-    private ItemStrategy[] items;
+    private Item[] items;
 
     private GildedRose app;
 
     @BeforeEach
     void testUp(){
-        items = new ItemStrategy[] {
+        items = new Item[] {
            new SulfurasItem("Sulfuras, Hand of Ragnaros", 10, 15),
             new  SulfurasItem("Sulfuras, Hand of Ragnaros", 1, 55)
         };

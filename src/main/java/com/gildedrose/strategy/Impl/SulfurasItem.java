@@ -1,7 +1,6 @@
 package com.gildedrose.strategy.Impl;
 
 import com.gildedrose.Item;
-import com.gildedrose.strategy.ItemStrategy;
 
 public class SulfurasItem extends Item implements ItemStrategy {
 

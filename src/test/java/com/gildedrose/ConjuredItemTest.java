@@ -1,7 +1,6 @@
 package com.gildedrose;
 
 import com.gildedrose.strategy.Impl.ConjuredItem;
-import com.gildedrose.strategy.ItemStrategy;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -10,13 +9,13 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class ConjuredItemTest {
 
-    private ItemStrategy[] items;
+    private Item[] items;
 
     private GildedRose app;
 
     @BeforeEach
     void testUp(){
-        items = new ItemStrategy[] {
+        items = new Item[] {
            new  ConjuredItem("Conjured Item", 10, 15),
             new  ConjuredItem("Conjured Item", 1, 1),
             new  ConjuredItem("Conjured Item", 1, 50),

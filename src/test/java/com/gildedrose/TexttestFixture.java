@@ -1,13 +1,12 @@
 package com.gildedrose;
 
 import com.gildedrose.strategy.Impl.*;
-import com.gildedrose.strategy.ItemStrategy;
 
 public class TexttestFixture {
     public static void main(String[] args) {
         System.out.println("OMGHAI!");
 
-        ItemStrategy[] items = new ItemStrategy[] {
+        Item[] items = new Item[] {
                 new NormalItem("+5 Dexterity Vest", 10, 20), //
                 new AgedBrieItem("Aged Brie", 2, 0), //
                 new NormalItem("Elixir of the Mongoose", 5, 7), //
@@ -29,7 +28,7 @@ public class TexttestFixture {
         for (int i = 0; i < days; i++) {
             System.out.println("-------- day " + i + " --------");
             System.out.println("name, sellIn, quality");
-            for (ItemStrategy item : items) {
+            for (Item item : items) {
                 System.out.println(item);
             }
             System.out.println();

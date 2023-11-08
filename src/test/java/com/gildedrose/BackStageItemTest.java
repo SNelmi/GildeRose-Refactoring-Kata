@@ -1,8 +1,6 @@
 package com.gildedrose;
 
 import com.gildedrose.strategy.Impl.BackstageItem;
-import com.gildedrose.strategy.Impl.ConjuredItem;
-import com.gildedrose.strategy.ItemStrategy;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,13 +9,13 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class BackStageItemTest {
 
-    private ItemStrategy[] items;
+    private Item[] items;
 
     private GildedRose app;
 
     @BeforeEach
     void testUp(){
-        items = new ItemStrategy[] {
+        items = new Item[] {
            new BackstageItem("Backstage passes to a TAFKAL80ETC concert", 15, 15),
             new  BackstageItem("Backstage passes to a TAFKAL80ETC concert", 3, 48),
             new  BackstageItem("Backstage passes to a TAFKAL80ETC concert", 8, 45),
