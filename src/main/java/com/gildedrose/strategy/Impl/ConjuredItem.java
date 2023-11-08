@@ -1,6 +1,7 @@
 package com.gildedrose.strategy.Impl;
 
 import com.gildedrose.Item;
+import com.gildedrose.strategy.ItemStrategy;
 
 import static com.gildedrose.Utils.Constants.MIN_QUALITY_VALUE;
 

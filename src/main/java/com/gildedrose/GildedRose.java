@@ -1,9 +1,6 @@
 package com.gildedrose;
 
-import com.gildedrose.strategy.Impl.AgedBrieItem;
-import com.gildedrose.strategy.Impl.BackstageItem;
-import com.gildedrose.strategy.Impl.ConjuredItem;
-import com.gildedrose.strategy.Impl.SulfurasItem;
+import com.gildedrose.strategy.Impl.*;
 
 class GildedRose {
     Item[] items;
@@ -23,6 +20,8 @@ class GildedRose {
                 ((ConjuredItem) i).update();
             }else if (i instanceof SulfurasItem){
                 ((SulfurasItem) i).update();
+            }else if (i instanceof NormalItem){
+                ((NormalItem) i).update();
             }
         }
     }

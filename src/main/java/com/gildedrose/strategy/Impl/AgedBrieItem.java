@@ -1,6 +1,7 @@
 package com.gildedrose.strategy.Impl;
 
 import com.gildedrose.Item;
+import com.gildedrose.strategy.ItemStrategy;
 
 public class AgedBrieItem extends Item implements ItemStrategy {
 
